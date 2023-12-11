@@ -1,0 +1,110 @@
+.kb-sub {
+  .cont-wrap {
+    position: relative;
+    .inner {
+        padding : 6rem 8rem;
+        gap : 3rem;
+        height: 100%;
+        justify-content: center;
+      .box {
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        &.box-sub {
+            align-items: center;
+            .txt-box {
+                .img-box {
+                    padding-bottom: 0;
+                }
+            }
+        }
+        .txt-box {
+          align-items: flex-end;
+          gap: 2rem;
+          a {
+            .txt {
+              font-size: 3rem;
+              text-decoration: underline;
+              text-underline-position: under;
+              &:hover {
+                color: $color-ye;
+              }
+            }
+          }
+          .img-box {
+            border-bottom: none;
+          }
+        }
+      }
+      .img-wrap {
+        width: 72%;
+        &.w43 {
+            width: 43%;
+        }
+        img {
+            border : 0.2rem solid $color-ye;
+            border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+    .kb-sub {
+        .cont-wrap {
+            .inner {
+                .box {
+                    gap : 2rem;
+                    .txt-box {
+                        a {
+                            .txt {
+                                font-size: 2rem;
+                            }
+                        }
+                        .img-box {
+                            justify-content: center;
+                        }
+                    }
+                }
+                .img-wrap {
+                    width: 100%;
+                    &.sub {
+                        img {
+                            height: 50vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 713px) and (max-width: 733px) {
+    .kb-sub {
+        .cont-wrap {
+            .inner {
+                .box {
+                    .txt-box {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 666px) {
+    .kb-sub {
+        .cont-wrap {
+            .inner {
+                .box {
+                    .txt-box {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}

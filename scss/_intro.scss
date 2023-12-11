@@ -1,0 +1,67 @@
+.backSky {
+    display:none;
+  &.wrap {
+    .tit-box {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        display : none;
+        .tit {
+            font-size : 6rem;
+        }
+        .txt {
+            font-size : 2.3rem;
+            color : $color-ye;
+        }
+    }
+    .auto-box {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        display : none;
+        .txt {
+            font-size : 2.3rem;
+        }
+    }
+  }
+}
+.sky .star {
+  fill: #fff;
+  stroke: none;
+  stroke-width: 0;
+}
+
+// 갤럭시 탭 S4 뷰포트
+@media (max-width: 713px) {
+    .backSky {
+        &.wrap {
+            .tit-box {
+                .tit {
+                    font-size : 4rem;
+                }
+                .txt {
+                    font-size : 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+        .backSky {
+        &.wrap {
+            .tit-box {
+                .tit {
+                    font-size : 2.6rem;
+                }
+                .txt {
+                    font-size : 1.0rem;
+                }
+            }
+        }
+    }
+}

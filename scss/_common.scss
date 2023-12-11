@@ -1,0 +1,291 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button,
+input,
+select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "Pretendard";
+  font-weight: 400;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+body {
+  height: 100%;
+  line-height: 1;
+  overflow-x: hidden;
+  &.is-rock {
+    overflow-y: hidden;
+  }
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+}
+
+.icon {
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+select {
+  -webkit-appearance: none;
+  /* for chrome */
+  -moz-appearance: none;
+  /*for firefox*/
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+  /*for IE10,11*/
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  position: relative;
+  display: none;
+}
+
+#fullpage {
+  .section-main {
+    background: linear-gradient(to bottom, $bg-black 10%, $bg-primary);
+  }
+}
+
+.section-sub {
+  background: $bg-primary;
+}
+
+#fp-nav {
+  ul {
+    li {
+      a {
+        &.active {
+          span {
+            background: $color-ye;
+          }
+        }
+        span {
+          background: $color-wh;
+        }
+      }
+    }
+  }
+}
+
+//swiper
+.swiper-button-next {
+  right: 0.3rem;
+  top: 59%;
+  .ic-right {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: url("../imges/ic-right.png") no-repeat center/contain;
+  }
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-prev {
+  left: 0.3rem;
+  top: 59%;
+  .ic-left {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: url("../imges/ic-left.png") no-repeat center/contain;
+  }
+  &::after {
+    display: none;
+  }
+}
+
+.img-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid $bg-primary;
+  flex-wrap: wrap;
+  .box-wrap {
+    border-radius: 1rem;
+    border: 0.1rem solid $bg-primary;
+    background: linear-gradient(to right, $bg-primary 10%, $color-shdow);
+    border-top: 0.1rem solid $color-wh;
+    border-left: 0.1rem solid $color-wh;
+    gap: 0.6rem;
+    padding: 0.5rem;
+    [class*="ic-"] {
+      width: 2.2rem;
+      height: 2.2rem;
+      display: inline-block;
+      padding: 1rem;
+      &.ic-html {
+        background: url("../imges/ic-html.svg") no-repeat center/contain;
+      }
+      &.ic-scss {
+        background: url("../imges/ic-scss.png") no-repeat center/contain;
+      }
+      &.ic-js {
+        background: url("../imges/ic-js.svg") no-repeat center/contain;
+      }
+      &.ic-react {
+        background: url("../imges/ic-react.svg") no-repeat center/contain;
+      }
+    }
+    .txt {
+      color: #ffffff !important;
+      font-size: 1.6rem !important;
+      opacity: 1 !important;
+    }
+  }
+}

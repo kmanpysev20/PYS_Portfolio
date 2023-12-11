@@ -1,0 +1,53 @@
+.main-footer {
+    position: relative;
+    background: $bg-primary;
+    height: 12rem;
+    padding: 0 3rem;
+    z-index: 10;
+    display : flex;
+    align-items: center;
+    &::before {
+        content: '';
+        position: absolute;
+        top : 0;
+        left: 0;
+        right : 0;
+        background-image: radial-gradient(circle,#ffffff,transparent);
+        height: 0.1rem;
+        margin: 0 auto;
+        width: 100%;
+        z-index: 1;
+    }
+    &.is-active {
+        position: fixed;
+        bottom : 0;
+        left : 0;
+        width: 100%;
+    }
+    .inner {
+        position: relative;
+        width: 100%;
+        max-width: 132rem;
+        margin: 0 auto;
+        .box {
+            gap : 2rem;
+            align-items: flex-start;
+            .txt {
+                font-weight: bold;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 713px) {
+    .main-footer {
+        .inner {
+            .box {
+                .txt {
+                    font-size: 3.2vw;
+                }
+            }
+        }
+    }
+}
