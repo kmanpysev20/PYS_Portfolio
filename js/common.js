@@ -21,13 +21,13 @@ $(window).scroll(function () {
 
   function scrollTop() {
       if (scrolled >= 1) {
-        $(".scroll-top").fadeIn('slow').css('display','flex');
+        $(".scroll-top").css('display','flex');
       } else {
-        $(".scroll-top").fadeOut('slow').css('display', 'none');
+        $(".scroll-top").css('display', 'none');
       }
   }
   function headerScroll() {
-      if (scrolled <= 751) {
+      if (scrolled <= 1) {
         $(".main-header").fadeIn("slow").addClass('is-active');
       } else {
         $(".main-header").fadeOut("slow");
@@ -48,7 +48,7 @@ $(window).scroll(function () {
     $(".bg-scroll").each(function () {
       let $this = $(this);
 
-      if (scrolled >= $this.first().offset().top - 350) {
+      if (scrolled >= $this.first().offset().top - 800) {
         $(".bg-scroll").removeClass("is-active");
         $this.addClass("is-active");
       } else {
@@ -63,7 +63,7 @@ $(window).scroll(function () {
 // Scroll Top [s]
 $(function scrollTop() {
   $(".scroll-top").on("click", function () {
-    $('html').scrollTop(0);
+    $('html').animate({scrollTop : 0}, 'slow')
   });
 });
 //Scroll Top [e]

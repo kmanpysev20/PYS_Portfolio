@@ -1,0 +1,86 @@
+.about {
+    .cont-wrap {
+        &.cont-top {
+            .inner {
+                padding : 20rem 8rem;
+            }
+        }
+        .inner {
+            width: 100%;
+            max-width: 132rem;
+            gap : 8rem;
+            &.gap4 {
+                gap : 4rem;
+            }
+            .box {
+                width: 60%;
+                align-items: flex-start;
+                .tit {
+                    margin-bottom : 2rem;
+                }
+                .txt {
+                    font-size: 2.5rem;
+                    font-weight: 200;
+                    text-align: left;
+                    line-height: 3.5rem;
+                }
+            }
+            .img-box {
+                width: 40%;
+                border-bottom : unset;
+            }
+            .menu-list {
+                text-align: left;
+                line-height: 3rem;
+                font-size: 2rem;
+                gap : 2rem;
+                li {
+                    font-weight: 200;
+                    img {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+            }
+            h2 {
+                color : $color-ye;
+            }
+            h3 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 722px) {
+    .about {
+        .cont-wrap {
+            .inner {
+                flex-direction: column;
+                .box {
+                    width: 100%;
+                    align-items: center;
+                    .txt {
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+                }
+                .img-box {
+                    width: 100%;
+                }
+                .small-tit {
+                    font-size: 3.5rem;
+                }
+                .menu-list {
+                    font-size: 1.5rem;
+                }
+                h2 {
+                    font-size: 3.5rem !important;
+                }
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -147,6 +147,7 @@ a {
   vertical-align: baseline;
   background: transparent;
   color: inherit;
+  scroll-behavior: smooth;
 }
 
 .icon {
@@ -185,6 +186,10 @@ select::-ms-expand {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .app {
@@ -288,4 +293,45 @@ select::-ms-expand {
       opacity: 1 !important;
     }
   }
+}
+
+.loading {
+  opacity: 0;
+    -webkit-transform: translateY(45px);
+    transform: translateY(45px);
+    -webkit-transition: opacity 0.9s, -webkit-transform 0.6s;
+    transition: opacity 0.9s, -webkit-transform 0.6s;
+    transition: transform 0.6s, opacity 0.9s;
+    transition: transform 0.6s, opacity 0.9s, -webkit-transform 0.6s;
+}
+
+.loading.loaded {
+  opacity: 1;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.bg-brown {
+  background: url("../imges/img-gs.png") 50% center/contain no-repeat !important;
+  padding-top: 50% !important;
+  background-attachment: fixed !important;
+}
+
+.small-tit {
+  font-size: 4rem !important;
+}
+
+.solid {
+  border-top : 0.1rem solid $color-wh;
+  border-bottom : 0.1rem solid $color-wh;
+}
+
+.solid-top {
+  border-top : 0.1rem solid $color-wh;
+}
+
+.solid-bot {
+  border-bottom : 0.1rem solid $color-wh;
 }

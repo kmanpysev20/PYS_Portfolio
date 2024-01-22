@@ -1,0 +1,140 @@
+.roadmap {
+    .cont-wrap {
+        .inner {
+            max-width: 132rem;
+            width: 100%;
+            &.gap8 {
+                gap : 8rem;
+                &:nth-of-type(1) {
+                    padding-bottom : 0;
+                }
+            }
+            .tit {
+                margin-bottom : 2rem;
+            }
+            .txt {
+                font-size: 2.5rem;
+            }
+            .list-wrap {
+                border : 0.25rem solid $color-wh;
+                border-radius: 1.5rem;
+                padding : 4rem;
+                width: 50%;
+                .list {
+                    h3 {
+                        font-size: 3rem;
+                        font-weight: bold;
+                        margin-bottom: 2rem;
+                    }
+                    .box {
+                        justify-content: flex-start;
+                        gap : 1.5rem;
+                        margin-bottom: 2rem;
+                        &:nth-of-type(9) {
+                            margin-bottom: 0;
+                        }
+                        .txt {
+                            text-align: left;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .roadmap {
+        .cont-wrap {
+            .inner {
+                &.gap8 {
+                    flex-wrap : wrap;
+                }
+                .list-wrap {
+                    width: 100%;
+                    .list {
+                        .box {
+                            img {
+                                width: 3rem;
+                                height: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .roadmap {
+        .cont-wrap {
+            .inner {
+                .list-wrap {
+                    .list {
+                        h3 {
+                            font-size: 2rem;
+                        }
+                        .box {
+                            img {
+                                width: 2rem;
+                                height: 2rem;
+                            }
+                            .txt {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .roadmap {
+        .cont-wrap {
+            .inner {
+                .list-wrap {
+                    padding : 2rem;
+                    .list {
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+                        .box {
+                            .txt {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 279px) {
+    .roadmap {
+        .cont-wrap {
+            .inner {
+                .list-wrap {
+                    .list {
+                        h3 {
+                            overflow: hidden;  	
+                            text-overflow: ellipsis;
+                            white-space: nowrap; 	
+                        }
+                        .box {
+                            .txt {
+                                overflow: hidden;  	
+                                text-overflow: ellipsis;
+                                white-space: nowrap; 	
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
