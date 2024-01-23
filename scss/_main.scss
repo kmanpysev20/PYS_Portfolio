@@ -235,6 +235,9 @@
             margin-bottom: 8rem;
             position: relative;
             z-index: 2;
+            .br {
+                display : none;
+            }
             .tit-sub-ani {
                 width: 100%;
                 position: absolute;
@@ -248,6 +251,9 @@
                 font-size: 4.5rem;
                 font-weight: bold;
                 transition: all 1s  ease-in-out;
+                .br {
+                    display : none;
+                }
             }
         }
         .mainSwiper {
@@ -468,6 +474,15 @@
     }
     .cont-wrap{
         .inner {
+            .tit-sub {
+                font-size: 3rem;
+                br {
+                    display : block !important;
+                }
+                .tit-sub-ani {
+                    font-size: 3rem;
+                }
+            }
             &.bg-inner {
                 .bg-box {
                     .txt-box {

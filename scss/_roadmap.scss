@@ -14,6 +14,7 @@
             }
             .txt {
                 font-size: 2.5rem;
+                line-height: 3.5rem;
             }
             .list-wrap {
                 border : 0.25rem solid $color-wh;
@@ -64,6 +65,12 @@
                         }
                     }
                 }
+                .txt {
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
             }
         }
     }
@@ -87,6 +94,13 @@
                                 font-size: 1.5rem;
                             }
                         }
+                    }
+                }
+                .txt {
+                    font-size: 2rem;
+                    img {
+                        width: 2rem;
+                        height: 2rem;
                     }
                 }
             }
