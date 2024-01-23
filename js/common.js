@@ -160,6 +160,13 @@ $(function navClick() {
   });
 })
 
+$(function CareerClick() {
+  $(".career-btn").on('click', function() {
+    $(this).toggleClass('is-open');
+    $(this).next('.txt').toggleClass('is-open');
+  });
+})
+
 // click event [e]
 
 // mo-header event [s]
