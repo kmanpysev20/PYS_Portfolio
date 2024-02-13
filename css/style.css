@@ -1185,6 +1185,9 @@ select::-ms-expand {
   width: 40%;
   border-bottom: unset;
 }
+.about .cont-wrap .inner .img-box img {
+  border-radius: 50%;
+}
 .about .cont-wrap .inner .menu-list {
   text-align: left;
   line-height: 3rem;
@@ -1220,6 +1223,9 @@ select::-ms-expand {
   }
   .about .cont-wrap .inner .img-box {
     width: 100%;
+  }
+  .about .cont-wrap .inner .img-box img {
+    width: 50%;
   }
   .about .cont-wrap .inner .small-tit {
     font-size: 3.5rem;

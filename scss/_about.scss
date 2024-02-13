@@ -28,6 +28,9 @@
             .img-box {
                 width: 40%;
                 border-bottom : unset;
+                img {
+                    border-radius: 50%;
+                }
             }
             .menu-list {
                 text-align: left;
@@ -68,6 +71,9 @@
                 }
                 .img-box {
                     width: 100%;
+                    img {
+                        width: 50%;
+                    }
                 }
                 .small-tit {
                     font-size: 3.5rem;
