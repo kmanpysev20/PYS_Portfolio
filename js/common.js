@@ -95,35 +95,35 @@ $(function fullPage() {
       navigation: true,
       navigationPosition: "right",
       // responsiveWidth: 713,
-      onLeave: function (anchorLink, index) {
-        if (index === 1) {
-          $(".scroll-top").addClass('is-active').css("top", "50%");
-          let anClass = `fpsec${index}`;
-          $(".cont-wrap")
-            .removeClass("fpsec1 fpsec2 fpsec3 fpsec4")
-            .addClass(`${anClass}`);
-        } else if (index === 2) {
-          $(".scroll-top").addClass("is-active").css("top", "150%");
-          let anClass = `fpsec${index}`;
-          $(".cont-wrap")
-            .removeClass("fpsec1 fpsec2 fpsec3 fpsec4")
-            .addClass(`${anClass}`);
-        } else if (index === 3) {
-          $(".scroll-top").addClass("is-active").css("top", "250%");
-          $(".main-footer").removeClass("is-active").fadeOut("slow");
-          let anClass = `fpsec${index}`;
-          $(".cont-wrap")
-            .removeClass("fpsec1 fpsec2 fpsec3 fpsec4")
-            .addClass(`${anClass}`);
-        } else if (index === 4) {
-          $(".scroll-top").addClass('is-active').css("top", "350%");
-          $(".main-footer").addClass("is-active").fadeIn("slow");
-          let anClass = `fqsec${index}`;
-          $(".cont-wrap")
-            .removeClass("fpsec1 fpsec2 fpsec3 fpsec4")
-            .addClass(`${anClass}`);
-        }
-      },
+      // onLeave: function (anchorLink, index) {
+      //   if (index === 1) {
+      //     $(".scroll-top").addClass('is-active').css("top", "50%");
+      //     let anClass = `fpsec${index}`;
+      //     $(".cont-wrap")
+      //       .removeClass("fpsec1 fpsec2 fpsec3 fpsec4")
+      //       .addClass(`${anClass}`);
+      //   } else if (index === 2) {
+      //     $(".scroll-top").addClass("is-active").css("top", "150%");
+      //     let anClass = `fpsec${index}`;
+      //     $(".cont-wrap")
+      //       .removeClass("fpsec1 fpsec2 fpsec3 fpsec4")
+      //       .addClass(`${anClass}`);
+      //   } else if (index === 3) {
+      //     $(".scroll-top").addClass("is-active").css("top", "250%");
+      //     $(".main-footer").removeClass("is-active").fadeOut("slow");
+      //     let anClass = `fpsec${index}`;
+      //     $(".cont-wrap")
+      //       .removeClass("fpsec1 fpsec2 fpsec3 fpsec4")
+      //       .addClass(`${anClass}`);
+      //   } else if (index === 4) {
+      //     $(".scroll-top").addClass('is-active').css("top", "350%");
+      //     $(".main-footer").addClass("is-active").fadeIn("slow");
+      //     let anClass = `fqsec${index}`;
+      //     $(".cont-wrap")
+      //       .removeClass("fpsec1 fpsec2 fpsec3 fpsec4")
+      //       .addClass(`${anClass}`);
+      //   }
+      // },
     });    
     6
 })
