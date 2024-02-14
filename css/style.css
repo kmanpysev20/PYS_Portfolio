@@ -931,7 +931,6 @@ select::-ms-expand {
   display: block;
   width: 2rem;
   height: 2rem;
-  transform: rotate(180deg);
   background: url("../imges/logo-ys.png") no-repeat center/contain;
 }
 .scroll-top.home.is-active {
