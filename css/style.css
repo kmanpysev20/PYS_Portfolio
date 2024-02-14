@@ -908,7 +908,7 @@ select::-ms-expand {
   width: 4.6rem;
   height: 4.6rem;
   border-radius: 2.5rem;
-  top: 50%;
+  top: 48%;
   right: 1rem;
   z-index: 5;
   background: linear-gradient(#111111, #6c6c6c);
