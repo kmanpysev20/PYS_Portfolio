@@ -1143,8 +1143,8 @@ select::-ms-expand {
   .kb-sub .cont-wrap .inner .img-wrap {
     width: 100%;
   }
-  .kb-sub .cont-wrap .inner .img-wrap.sub img {
-    height: 50vh;
+  .kb-sub .cont-wrap .inner .img-wrap.w43 {
+    width: 100%;
   }
 }
 @media (min-width: 713px) and (max-width: 733px) {

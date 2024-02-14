@@ -70,10 +70,13 @@
                 }
                 .img-wrap {
                     width: 100%;
+                    &.w43 {
+                        width: 100%;
+                    }
                     &.sub {
-                        img {
-                            height: 50vh;
-                        }
+                        // img {
+                        //     height: 50vh;
+                        // }
                     }
                 }
             }
