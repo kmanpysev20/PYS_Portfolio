@@ -65,8 +65,8 @@ $(function () {
     .fromTo(".final .t2", { autoAlpha: 0, duration: 1}, { autoAlpha: 1, duration: 1, y:'-50%'}, "+=1")
     .fromTo(".final .t3", { autoAlpha: 0, duration: 1}, { autoAlpha: 1, duration: 1, y: '-50%'}, "+=1")
     .fromTo(".final .t4", { autoAlpha: 0, duration: 1}, { autoAlpha: 1, duration: 1, y: '-50%'}, "+=1")
-    .fromTo(".final .t5", { autoAlpha: 0, duration: 1}, { autoAlpha: 1, duration: 1, y: '-50%', scale : 10}, "+=1")
-    // .fromTo(".final .circle", {autoAlpha: 0, duration: 1},{autoAlpha: 1, duration: 5, scale : 10 , background: '#fff'}, "+=1")
+    .fromTo(".final .t5", { autoAlpha: 0, duration: 1}, { autoAlpha: 1, duration: 1, y: '-50%'}, "+=1")
+    .fromTo(".final .circle", {autoAlpha: 0, duration: 1},{autoAlpha: 1, duration: 5, scale : 10 , background: '#fff'}, "+=1")
     .fromTo(".final .backSky", { autoAlpha: 0, duration: 1 , y: 50}, { autoAlpha: 1, duration: 1, y:0}, "+=1")
 
   ScrollTrigger.create({
