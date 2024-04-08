@@ -3,7 +3,6 @@ $(function () {
   $(".visual .tit").fadeIn(2000);
 
   gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(ScrollSmoother);
 
   // 01.visual
   const visual = gsap.timeline();
@@ -81,10 +80,6 @@ $(function () {
     // markers: true,
   });
 
-  ScrollSmoother.create({
-    smooth: 1,
-    effects: true,
-  });
 });
 // intro_scrollTrigger [e]
 
