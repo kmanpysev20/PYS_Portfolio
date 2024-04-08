@@ -73,7 +73,7 @@ $(function () {
     animation: final,
     trigger: ".final",
     start: "top top",
-    end: "+=7000",
+    end: "+=4000",
     scrub: true,
     pin: true,
     anticipatePin: 1,
