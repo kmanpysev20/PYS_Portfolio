@@ -715,6 +715,7 @@ select::-ms-expand {
   }
   .infoProject .inner .textBox {
     text-align: center;
+    margin-top: 0 !important;
   }
   .infoProject .inner .textBox .tit {
     font-size: 2rem !important;
