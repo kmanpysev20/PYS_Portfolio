@@ -238,6 +238,17 @@
   transform: translate(-50%, 0%);
   animation: moveStar2 90s linear infinite;
 }
+
+.sky3 {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  top: 0%;
+  left: 70%;
+  transform: translate(-50%, 0%);
+  animation: moveStar3 90s linear infinite;
+}
+
 .sky .star {
   fill: #fff;
   stroke: none;
@@ -305,6 +316,16 @@
 @keyframes moveStar2 {
   from {
     transform: translate(-50%, 0%) rotate(180deg);
+  }
+
+  to {
+    transform: translate(-50%, 0%) rotate(0);
+  }
+}
+
+@keyframes moveStar3 {
+  from {
+    transform: translate(-50%, 0%) rotate(0);
   }
 
   to {

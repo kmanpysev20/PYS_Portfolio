@@ -86,6 +86,7 @@ $(function () {
 // star script [s]
 const sky = document.querySelector(".sky");
 const sky2 = document.querySelector(".sky2");
+const sky3 = document.querySelector(".sky3");
 
 const makeStars = () => {
   const maxSize = Math.max(window.innerWidth, window.innerHeight);
@@ -106,6 +107,7 @@ const makeStars = () => {
 
   sky.innerHTML = htmlDummy;
   sky2.innerHTML = htmlDummy;
+  sky3.innerHTML = htmlDummy;
 };
 // star script [e]
 
