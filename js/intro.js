@@ -58,7 +58,36 @@ $(function () {
     });
   });
 
-  // 04. final > textBox
+  // 04. horizontal > imgBoxes
+  let list = gsap.utils.toArray('.horizontal ul li');
+  let scrollEvent = gsap.to(list, {
+    xPercent : - 100 * (list.length - 1),
+    ease : 'none',
+    scrollTrigger : {
+      trigger : '.horizontal',
+      start : "center center",
+      end : '300%',
+      pin : true,
+      scrub : 1,
+      // markers : true,
+    }
+  })
+
+  gsap.utils.toArray('.imgBoxes').forEach(function(imgBoxes){
+    gsap.timeline({
+      scrollTrigger : {
+        trigger : imgBoxes,
+        containerAnimation : scrollEvent,
+        start : 'left 70%',
+        end : '50% 70%',
+        scrub : true,
+        // markers : true,
+      }
+    })
+    .fromTo(imgBoxes, {transform:'scale(1)',ease : 'none ', duration : '1', filter: "brightness(1)"}, {transform:'scale(1.2)',ease : 'none ', duration : '1', filter: "brightness(2)"}, 0)
+  })
+
+  // 05. final > textBox
   const final = gsap.timeline();
   final
     .fromTo(".final .t1", { autoAlpha: 1, duration: 1, y: -500, rotation: 0}, { autoAlpha: 1, duration: 1, y: '-50%', rotation: 360},"+=1")

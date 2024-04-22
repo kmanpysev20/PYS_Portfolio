@@ -145,6 +145,40 @@
         }
       }
     }
+    &.horizontal {
+      height: 100vh;
+      display : flex;
+      align-items: center;
+      padding : 4rem;
+      .inner {
+        ul {
+          width: 450%;
+          display : flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap : 4rem;
+          li {
+            width: 100%;
+            position: relative;
+            p {
+              font-size: 7vw;
+              font-weight: bold;
+              text-align: center;
+              color : $color-gr;
+            }
+            img {
+              border-radius: 2rem;
+              width: 70%;
+            }
+            .textBoxes {
+              position: absolute;
+              left : 0;
+              top : 0
+            }
+          }
+        }
+      }
+    }
     &.final {
       height: 100vh;
       display: flex;

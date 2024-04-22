@@ -524,6 +524,38 @@ select::-ms-expand {
   border-radius: 2rem;
   filter: brightness(100%);
 }
+.intro section.horizontal {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+.intro section.horizontal .inner ul {
+  width: 450%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+}
+.intro section.horizontal .inner ul li {
+  width: 100%;
+  position: relative;
+}
+.intro section.horizontal .inner ul li p {
+  font-size: 7vw;
+  font-weight: bold;
+  text-align: center;
+  color: #b1dd40;
+}
+.intro section.horizontal .inner ul li img {
+  border-radius: 2rem;
+  width: 70%;
+}
+.intro section.horizontal .inner ul li .textBoxes {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .intro section.final {
   height: 100vh;
   display: flex;
