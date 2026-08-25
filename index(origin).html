@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./imges/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>YS - Publisher</title>
+    <style>
+      .backSky {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to bottom, #111, #474853);
+        overflow: hidden;
+      }
+      .sky {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        animation: moveStar 90s linear infinite;
+      }
+        .sky2 {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        animation: moveStar2 90s linear infinite;
+      }
+      .sky .star {
+        fill: #fff;
+        stroke: none;
+        stroke-width: 0;
+      }
+      @keyframes moveStar {
+        from {
+          transform: translate(-50%, -50%) rotate(0);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(180deg);
+        }
+      }
+      @keyframes moveStar2 {
+        from {
+          transform: translate(-50%, -50%) rotate(180deg);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backSky wrap">
+        <div class="tit-box">
+            <h1 class="tit">P o r t f o l i o</h1>
+            <p class="txt">Welcome to YongSoo Park’s portfolio</p>
+        </div>
+        <div class="auto-box">
+            <p class="txt">3초 후 자동으로 메인으로 이동됩니다</p>
+        </div>
+        <svg class="sky"></svg>
+        <svg class="sky sky2"></svg>
+    </div>
+  </body>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/intro.js"></script>
+</html>
