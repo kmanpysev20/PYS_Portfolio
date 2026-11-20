@@ -55,7 +55,7 @@ const projects = {
       "디자이너용 랜딩페이지 제작 도구 개발",
       "작업 결과 즉시 확인 및 산출물 생성 흐름 구현"
     ],
-    "outcome": "개발 의존도 감소와 산출 방식 일원화. 업무시간 15% 단축, 연간 450만원 인건비 절감(이력서 기재 기준).",
+    "outcome": "개발 의존도 감소와 산출 방식 일원화. 업무시간 50% 단축, 연간 450만원 인건비 절감.",
     "tags": [
       "제작 도구",
       "업무 효율화"
@@ -303,4 +303,42 @@ marqueeToggle.addEventListener('click', () => {
   const paused = marquee.classList.toggle('is-paused');
   marqueeToggle.setAttribute('aria-pressed', String(paused));
   marqueeToggle.textContent = paused ? '애니메이션 재생' : '애니메이션 일시정지';
+});
+
+const emailButton = document.querySelector('.contact-email');
+const copyStatus = document.querySelector('.email-action');
+let copyStatusTimer;
+emailButton.addEventListener('click', async () => {
+  const email = 'kmanpysev20@gmail.com';
+  clearTimeout(copyStatusTimer);
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(email);
+    } else {
+      const field = document.createElement('textarea');
+      field.value = email;
+      field.style.cssText = 'position:fixed;left:0;top:0;opacity:0;font-size:16px';
+      field.setAttribute('aria-label', '복사할 이메일 주소');
+      document.body.append(field);
+      field.select();
+      try {
+        if (!document.execCommand('copy')) throw new Error('Copy unavailable');
+      } finally {
+        field.remove();
+        emailButton.focus({ preventScroll: true });
+      }
+    }
+    copyStatus.textContent = '복사했어요';
+    emailButton.classList.add('is-copied');
+    copyStatusTimer = setTimeout(() => {
+      copyStatus.textContent = '주소 복사';
+      emailButton.classList.remove('is-copied');
+    }, 3000);
+  } catch {
+    emailButton.classList.remove('is-copied');
+    copyStatus.textContent = '복사 실패';
+    copyStatusTimer = setTimeout(() => {
+      copyStatus.textContent = '주소 복사';
+    }, 3000);
+  }
 });

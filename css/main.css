@@ -111,3 +111,37 @@ footer .brand-image img{width:140px;max-height:44px}
 }
 
 @media(max-width:600px){body{word-break:keep-all;overflow-wrap:break-word}.impact-grid>div:nth-child(2){border-top:1px solid #ffffff26;padding-top:24px}.hero-bottom p br{display:contents}}
+
+/* Contact links stay together; the page-top action lives in a floating rail. */
+.contact-socials{margin-top:26px}
+.github-link{display:inline-flex;align-items:center;gap:16px;max-width:100%;padding:18px 22px;border:1px solid #cdd3c7;border-radius:14px;background:#fff;box-shadow:0 4px 18px #181a1905;transition:border-color .2s,box-shadow .2s,background .2s}
+.github-link>svg{flex-shrink:0}
+.github-link>span:nth-child(2){display:flex;flex-direction:column;gap:2px;min-width:0}
+.github-link strong{font-size:16px;letter-spacing:.01em}
+.github-link>span:nth-child(2)>span{font-size:14px;color:var(--muted)}
+.github-link .external-symbol{font-size:11px;color:var(--muted);margin-left:20px;white-space:nowrap}
+.github-link:hover{background:#f0f5e9;border-color:#85a93d;box-shadow:0 8px 22px #26332f0c}
+.contact .contact-bottom{margin-top:35px}
+.quick-menu{position:fixed;right:22px;bottom:28px;z-index:40}
+.quick-top{width:62px;min-height:72px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:1px solid #c4ceba;border-radius:20px;background:#fff;color:#26332f;box-shadow:0 6px 25px #181a1914;transition:background .2s,border-color .2s,box-shadow .2s}
+.quick-top span{font-size:11px;font-weight:700;letter-spacing:.12em}
+.quick-top:hover{background:var(--lime);border-color:#a9c876;box-shadow:0 8px 28px #26332f24}
+@media(max-width:800px){.quick-menu{right:12px;bottom:max(16px,env(safe-area-inset-bottom))}.quick-top{width:48px;min-height:58px;border-radius:16px}.quick-top svg{width:19px;height:19px}.quick-top span{font-size:10px}footer{padding-bottom:88px}.contact .contact-bottom{padding-right:50px}}
+@media(max-width:340px){.github-link{padding:15px;gap:12px;width:100%}.github-link .external-symbol{display:none}.github-link>span:nth-child(2)>span{font-size:13px}}
+
+.quick-menu{top:50%;bottom:auto;transform:translateY(-50%)}
+.contact .contact-email{display:inline-flex;align-items:center;gap:16px;max-width:100%;margin-top:42px;padding:18px 22px;border:1px solid #cdd3c7;border-radius:14px;background:#fff;box-shadow:0 4px 18px #181a1905;font-size:16px;letter-spacing:normal;text-decoration:none;transition:border-color .2s,box-shadow .2s,background .2s}
+.contact-email>svg{flex-shrink:0}
+.contact-email>span:nth-child(2){display:flex;flex-direction:column;gap:2px;min-width:0}
+.contact-email strong{font-size:16px;letter-spacing:.01em}
+.contact-email>span:nth-child(2)>span{font-size:14px;color:var(--muted);overflow-wrap:anywhere}
+.contact-email .email-action{font-size:11px;color:var(--muted);margin-left:20px;white-space:nowrap}
+.contact .contact-email:hover{background:#f0f5e9;border-color:#85a93d;box-shadow:0 8px 22px #26332f0c}
+.contact-socials{margin-top:14px}
+@media(max-width:600px){.contact-email .email-action{display:none}.contact .contact-email{gap:12px;padding:18px;max-width:100%}.contact-email>svg{width:24px;height:24px}.contact-email>span:nth-child(2)>span{font-size:14px}}
+@media(max-width:340px){.contact .contact-email{width:100%;padding:15px}.contact-email>span:nth-child(2)>span{font-size:13px}}
+
+.contact .contact-email{text-align:left;font-family:inherit;line-height:1.6;cursor:pointer}
+.contact .contact-email.is-copied{background:#edf5df;border-color:#85a93d}
+.contact-email .email-action{min-width:62px;text-align:center}
+@media(max-width:600px){.contact .contact-email{flex-wrap:wrap}.contact-email .email-action{display:block;margin-left:40px;text-align:left}}
