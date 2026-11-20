@@ -428,3 +428,109 @@
     }
   }
 }
+
+
+/* Transparent brand surface with light lettering for the dark intro. */
+.intro section.infoProject .inner .imgBox.intro-brand {
+  background: transparent;
+  padding: clamp(20px, 4vw, 60px);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.intro section.infoProject .inner .imgBox.intro-brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: none;
+}
+
+
+/* Reveal the intro logo upward without colored overlay panels. */
+.intro section.infoProject .inner .imgBox.intro-brand::before,
+.intro section.infoProject .inner .imgBox.intro-brand::after {
+  content: none;
+  display: none;
+}
+.intro section.infoProject .inner .imgBox.intro-brand {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.intro section.infoProject .inner .imgBox.intro-brand.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .intro section.infoProject .inner .imgBox.intro-brand {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* End the intro with a clear invitation to explore the work. */
+.backSky .intro-outro {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 1100px;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #f7f8f5;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.intro-outro .outro-eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  line-height: 1.8;
+  color: #bbc4b6;
+  margin: 0 0 28px;
+}
+.intro-outro h2 {
+  font-size: clamp(30px, 4.5vw, 68px);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+.intro-outro h2 span { color: #cdff5f; }
+.intro-outro .outro-description {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #c2c7c0;
+  margin: 28px 0 36px;
+}
+.intro-outro .outro-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 56px;
+  padding: 14px 32px;
+  box-sizing: border-box;
+  border: 1px solid #cdff5f;
+  border-radius: 999px;
+  background: #cdff5f;
+  color: #181a19;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+.intro-outro .outro-link:hover {
+  background: #dcff94;
+  box-shadow: 0 0 28px #cdff5f26;
+}
+.intro-outro .outro-link:focus-visible { outline: 2px solid #fff; outline-offset: 6px; }
+.backSky.wrap2 > svg { pointer-events: none; }
+@media (max-width: 520px) {
+  .backSky .intro-outro { padding: 32px 20px; }
+  .intro-outro .outro-eyebrow { font-size: 11px; letter-spacing: 0.08em; margin-bottom: 22px; }
+  .intro-outro h2 { font-size: clamp(27px, 6.8vw, 35px); }
+  .intro-outro .outro-description { font-size: 16px; margin: 22px 0 28px; }
+  .intro-outro .outro-description br { display: none; }
+  .intro-outro .outro-link { max-width: 100%; padding: 14px 25px; }
+}

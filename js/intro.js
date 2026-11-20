@@ -97,6 +97,7 @@ $(function () {
     .fromTo(".final .t5", { autoAlpha: 0, duration: 1}, { autoAlpha: 1, duration: 1, y: '-50%'}, "+=1")
     .fromTo(".final .circle", {autoAlpha: 0, duration: 1},{autoAlpha: 1, duration: 5, scale : 10 , background: '#fff'}, "+=1")
     .fromTo(".final .backSky", { autoAlpha: 0, duration: 1 , y: 50}, { autoAlpha: 1, duration: 1, y:0}, "+=1")
+    .fromTo(".intro-outro > *", { autoAlpha: 0, y: 28 }, { autoAlpha: 1, y: 0, duration: 0.7, stagger: 0.18, ease: "power2.out" }, "-=0.2")
 
   ScrollTrigger.create({
     animation: final,
